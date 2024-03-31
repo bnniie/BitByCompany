@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Manager View</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logo2.png" type="image/x-icon">
+
+    <script src="js/chart.umd.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="BitBy Company">
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-links">Exit</a></li>           
+            </ul>
+        </nav>
+
+    </header>
+    
+    <main>
+
+        <div id="cronometro-container">
+            <div id="cronometro">00:00:00</div>
+            <div id="boton">
+                <button onclick="start()" id="startButton">Start</button>
+                <button onclick="stop()" id="stopButton">Stop</button>
+            </div>
+        </div>
+
+        <section class="cols-1">
+            <figure>
+                <h2>Compost production</h2>
+                <hr>
+                <canvas id="myChart"></canvas>
+            </figure>
+    
+             <figure>
+                <h2>Daily production</h2>
+                <hr>
+                <canvas id="myChart4"></canvas>
+             </figure>
+         </section>
+
+         <section class="cols-2">
+            <figure>
+                <h2>Weekly production</h2>
+                <hr>
+                <canvas id="myChart2"></canvas>
+            </figure>
+
+            <figure>
+                <h2>Monthly production</h2>
+                <hr>
+                <canvas id="myChart3"></canvas>
+            </figure>
+         </section>
+
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

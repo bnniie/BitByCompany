@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>BitBy Company</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logo2.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="BitBy Company">
+        </a>
+
+    </header>
+
+    <main>
+
+    <div class="wrapper">
+        <div class="form-box login">
+            <h1>Login</h1>
+            <h3>Exclusive for managers</h3>
+            <form action="second.html" method="post">
+
+                <div class="input-box">
+                    <input type="username" id="usr" name="usr" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" id="pas" name="pas" required>
+                    <label>Password</label>
+                </div>
+
+                <button type="button" class="btn" onclick="validarManager()">Login</button>
+            </form>
+        </div>
+    </div>
+
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
